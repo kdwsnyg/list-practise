@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .navigator {
+            height: 52px;
+            background-color: #1C1C1C;
+        }
+        .navigator>li{
+            float: left;
+            padding: 0 10px;
+        }
+        .navigator a {
+            display: block;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: #FDFDFD;
+        }
+        .active, .navigator li:not(.active):hover {
+            border-bottom: 2px solid #F27D6C;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="navigator">
+            <li class="active">
+                <a href="#首页" style="width: 80px;">首页</a>
+            </li>
+            <li>
+                <a href="#学习项目">学习项目</a>
+            </li>
+            <li>
+                <a href="#我的教室">我的教室</a>
+            </li>
+            <li>
+                <a href="#个人中心">个人中心</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
